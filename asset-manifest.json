@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/david-sangojinmi/fintech-sandpit-task/static/css/main.4cb33671.chunk.css",
-    "main.js": "/david-sangojinmi/fintech-sandpit-task/static/js/main.6e446d00.chunk.js",
-    "main.js.map": "/david-sangojinmi/fintech-sandpit-task/static/js/main.6e446d00.chunk.js.map",
-    "runtime-main.js": "/david-sangojinmi/fintech-sandpit-task/static/js/runtime-main.6bb487cc.js",
-    "runtime-main.js.map": "/david-sangojinmi/fintech-sandpit-task/static/js/runtime-main.6bb487cc.js.map",
-    "static/js/2.521b0cb9.chunk.js": "/david-sangojinmi/fintech-sandpit-task/static/js/2.521b0cb9.chunk.js",
-    "static/js/2.521b0cb9.chunk.js.map": "/david-sangojinmi/fintech-sandpit-task/static/js/2.521b0cb9.chunk.js.map",
-    "static/js/3.f4b5122c.chunk.js": "/david-sangojinmi/fintech-sandpit-task/static/js/3.f4b5122c.chunk.js",
-    "static/js/3.f4b5122c.chunk.js.map": "/david-sangojinmi/fintech-sandpit-task/static/js/3.f4b5122c.chunk.js.map",
-    "index.html": "/david-sangojinmi/fintech-sandpit-task/index.html",
-    "static/css/main.4cb33671.chunk.css.map": "/david-sangojinmi/fintech-sandpit-task/static/css/main.4cb33671.chunk.css.map",
-    "static/js/2.521b0cb9.chunk.js.LICENSE.txt": "/david-sangojinmi/fintech-sandpit-task/static/js/2.521b0cb9.chunk.js.LICENSE.txt"
+    "main.css": "/david-sangojinmi/static/css/main.4cb33671.chunk.css",
+    "main.js": "/david-sangojinmi/static/js/main.6e446d00.chunk.js",
+    "main.js.map": "/david-sangojinmi/static/js/main.6e446d00.chunk.js.map",
+    "runtime-main.js": "/david-sangojinmi/static/js/runtime-main.dd2755a6.js",
+    "runtime-main.js.map": "/david-sangojinmi/static/js/runtime-main.dd2755a6.js.map",
+    "static/js/2.521b0cb9.chunk.js": "/david-sangojinmi/static/js/2.521b0cb9.chunk.js",
+    "static/js/2.521b0cb9.chunk.js.map": "/david-sangojinmi/static/js/2.521b0cb9.chunk.js.map",
+    "static/js/3.f4b5122c.chunk.js": "/david-sangojinmi/static/js/3.f4b5122c.chunk.js",
+    "static/js/3.f4b5122c.chunk.js.map": "/david-sangojinmi/static/js/3.f4b5122c.chunk.js.map",
+    "index.html": "/david-sangojinmi/index.html",
+    "static/css/main.4cb33671.chunk.css.map": "/david-sangojinmi/static/css/main.4cb33671.chunk.css.map",
+    "static/js/2.521b0cb9.chunk.js.LICENSE.txt": "/david-sangojinmi/static/js/2.521b0cb9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6bb487cc.js",
+    "static/js/runtime-main.dd2755a6.js",
     "static/js/2.521b0cb9.chunk.js",
     "static/css/main.4cb33671.chunk.css",
     "static/js/main.6e446d00.chunk.js"
