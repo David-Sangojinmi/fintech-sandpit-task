@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
+/*-----------------------------
+* General
+-----------------------------*/
 .page-wrapper {
   font-family: 'Poppins', sans-serif;
-  background-color: #1b2636;
+  background-color: #425e88;
   min-height: 100vh;
   display: flex;
   /* flex-direction: column; */
@@ -25,13 +28,9 @@ div {
   text-align: center;
 }
 
-/* .center {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-} */
-
+/*-----------------------------
+* Form
+-----------------------------*/
 .form-section {
   padding: 30px 60px;
   width: 50vh;
@@ -60,43 +59,62 @@ div {
   color: white;
 }
 
+/*-----------------------------
+* SVG Graph
+-----------------------------*/
 svg.graph {
-  height: 500px;
-  width: 800px;
+  color: white;
 }
 
 svg.graph .grid {
 stroke: white;
-stroke-dasharray: 1 2;
 stroke-width: 1;
 }
 
-svg.graph .points {
-stroke: white;
-stroke-width: 3;
-}
-svg.graph .first_set {
-fill: #00554d;
+svg.graph .grid-lines {
+  stroke-linecap: butt;
 }
 
-svg.graph .surfaces {
-fill-opacity: 0.5;
+svg.graph .grid-values {
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+  stroke-dasharray: 1 2;
+  stroke: white;
 }
 
-svg.graph .grid.double {
-stroke-opacity: 0.4;
+svg.graph .grid-values .grid-values-circles {
+  r: 2;
+  stroke: rgb(60, 250, 234);
+  fill: rgb(29, 201, 231);
+}
+
+svg.graph .grid-values .grid-values-circles:hover {
+  r: 4;
+  stroke: rgb(179, 49, 49);
+  fill: rgb(243, 55, 22);
+}
+
+svg.graph .grid-values .grid-values-bars {
+  stroke: none;
+  fill: rgb(29, 201, 231);
+}
+
+svg.graph .grid-values .grid-values-bars:hover {
+  stroke: none;
+  fill: rgb(20, 150, 173);
 }
 
 svg.graph .labels {
-font-family: Arial;
-font-size: 14px;
-kerning: 1;
+  font-family: Arial;
+  font-size: 14px;
+  kerning: 1;
 }
 
 svg.graph .labels.x-labels {
-text-anchor: middle;
+  text-anchor: middle;
 }
 
 svg.graph .labels.y-labels {
-text-anchor: end;
+  text-anchor: end;
 }
