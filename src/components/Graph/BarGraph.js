@@ -18,12 +18,15 @@ const BarGraph = (props) => {
         }
     }
 
+    console.log("Values are: " + props.values);
+    console.log("Max value is: " + maxValue.value);
+
     return (
         <>
             <Title title={props.title} />
             <div>The max value is {maxValue.value}.</div>
             <svg className="graph" height={graphHeight} width={graphWidth}>
-                <title>A line chart showing some information</title>
+                <title>{props.title} line graph.</title>
                 <g>
                     <text x="400" y="450" className="line-graph-title">X-Axis</text>
                 </g>
@@ -33,17 +36,23 @@ const BarGraph = (props) => {
                 <g class="grid grid-lines">
                     <line x1="90" x2="705" y1="370" y2="370"></line>
                 </g>
-                <g>
+                <g class="grid grid-values">
                     {props.values.map((value, index) =>
-                    <circle cx={(100 + ((584/(numOfValues - 1)) * index)).toString()} cy={(373 - ((358/maxValue.value) * value)).toString()} r="5" stroke="white" strokeWidth="5" fill="blue" />)}
+                        <g className="grid grid-values grid-values-bars"
+                            transform={"translate(" + (91 + ((584/(numOfValues + 1)) * (index * 1.1))).toString() +
+                            "," + (11 + (358/maxValue.value) * (maxValue.value - value)).toString() + ")"}>
+                            <rect height={((358/maxValue.value) * value).toString()}
+                                width={(584/(numOfValues + 1)).toString()}></rect>
+                        </g>        
+                    )}
                 </g>
                 <g className="labels x-labels">
                     {props.values.map((value, index) =>
-                        <text x={(100 + ((584/(numOfValues - 1)) * index)).toString()} y="400">{index}</text>)}
+                        <text x={(91 + ((584/(numOfValues + 1)) * (index * 1.1)) + ((584/(numOfValues + 1))/2)).toString()} y="400">{index}</text>)}
                 </g>
                 <g className="labels y-labels">
                     {(new Array(6)).fill(0).map((_, n) =>
-                        <text x="80" y={(15 + (71 * n)).toString()}>{maxValue.value - (maxValue.value/5) * n}</text>)}
+                        <text x="80" y={(15 + (71 * n)).toString()}>{Math.round((maxValue.value - (maxValue.value/5) * n)*10)/10}</text>)}
                 </g>
             </svg>
         </>
