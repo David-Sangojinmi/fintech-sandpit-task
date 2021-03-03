@@ -6,14 +6,12 @@ import BarGraph from '../components/Graph/BarGraph';
 const Grapher = () => {
     const [graphData, setGraphData] = useState({
         title: "",
-        values: [],
-        type: 0
+        values: []
     })
 
     const [formData, setFormData] = useState({
         title: "",
-        values: [],
-        type: 0
+        values: []
     })
 
     const [graphsVisible, setGraphsVisible] = useState({
@@ -39,29 +37,28 @@ const Grapher = () => {
             ...graphData,
             title: formData.title,
             values: valuesArray,
-            type: formData.type
         })
 
-        if (formData.type === 0 || graphData.type === 0) {
-            if (graphsVisible.showHideBarGraph === false) {
-                setGraphsVisible({
-                    ...graphsVisible,
-                    showHideBarGraph: true,
-                    showHideLineGraph: false
-                });
-            }
-        } else {
-            if (graphsVisible.showHideLineGraph === false) {
-                setGraphsVisible({
-                    ...graphsVisible,
-                    showHideBarGraph: false,
-                    showHideLineGraph: true
-                });
-            }
-        }
+        // if (formData.type === 0 || graphData.type === 0) {
+        //     if (graphsVisible.showHideBarGraph === false) {
+        //         setGraphsVisible({
+        //             ...graphsVisible,
+        //             showHideBarGraph: true,
+        //             showHideLineGraph: false
+        //         });
+        //     }
+        // } else {
+        //     if (graphsVisible.showHideLineGraph === false) {
+        //         setGraphsVisible({
+        //             ...graphsVisible,
+        //             showHideBarGraph: false,
+        //             showHideLineGraph: true
+        //         });
+        //     }
+        // }
     }
 
-    const hideComponent = e => {
+    const hideComponent = (e) => {
         switch(e) {
             case "showHideLineGraph":
                 setGraphsVisible({

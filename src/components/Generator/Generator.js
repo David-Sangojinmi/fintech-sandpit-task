@@ -38,25 +38,9 @@ const Generator = (props) => {
                     ></input>
                     <br />
                 </label>
-                <label className="form-component" form="graph-form" required>
-                    <span className="input-text">Type of Graph</span>
-                    <select
-                        className="input-entry"
-                        name="type"
-                        onChange={handleChange}
-                        required
-                    >
-                        <option
-                            value="0"
-                            name="bar-graph"
-                        >Bar Graph</option>
-                        <option
-                            value="1"
-                            name="line-graph"
-                        >Line Graph</option>
-                    </select>
+                <label className="form-component">
+                    <button id="input-submit" type="submit" value="Generate">Generate</button>
                 </label>
-                <button id="input-submit" type="submit" value="Generate">Generate</button>
             </form>
         </div>
     )
