@@ -80,8 +80,8 @@ const Grapher = () => {
 
     return (
         <div className="App">
-            <Generator value={[formData, graphData]} onChange={handleChange} onSubmit={onSubmit}/>
             <div>
+                <Generator value={[formData, graphData]} onChange={handleChange} onSubmit={onSubmit}/>
                 <div>
                     <button
                         id="bar-button"
@@ -98,9 +98,12 @@ const Grapher = () => {
                         LINE GRAPH
                     </button>
                 </div>
+            </div>
+            <div className="graph-wrapper">
                 {graphsVisible.showHideBarGraph && <BarGraph title={graphData.title} values={graphData.values}/>}
                 {graphsVisible.showHideLineGraph && <LineGraph title={graphData.title} values={graphData.values}/>}
             </div>
+            
         </div>
     );
 }
