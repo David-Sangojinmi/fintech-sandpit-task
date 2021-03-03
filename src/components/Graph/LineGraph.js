@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Title from "./Title";
 
 const LineGraph = (props) => {
@@ -8,21 +8,7 @@ const LineGraph = (props) => {
     const gridWidth = 584;
     const gridYOrigin = 373;
     const numOfValues = props.values.length;
-    const [maxValue, setMaxValue] = useState({
-        value: 0
-    })
-    var i;
-    for (i = 0; i < numOfValues; i++) {
-        if (maxValue.value < props.values[i]) {
-            setMaxValue({
-                ...maxValue,
-                value: props.values[i]
-            })
-        }
-    }
-
-    console.log("Values are: " + props.values);
-    console.log("Max value is: " + maxValue.value);
+    const maxValue = Math.max(...props.values);
 
     return (
         <>
@@ -40,13 +26,13 @@ const LineGraph = (props) => {
                         <polyline
                             points={props.values.map((value, index) =>
                                 (91 + ((gridWidth/(numOfValues + 1)) * (index * 1.1)) + ((gridWidth/(numOfValues + 1))/2))
-                                + "," + (gridYOrigin - ((gridHeight/maxValue.value) * value))).toString()}
+                                + "," + (gridYOrigin - ((gridHeight/maxValue) * value))).toString()}
                         />
                         {props.values.map((value, index) =>
                         <circle class="grid grid-values grid-values-circles"
                             cx={(91 + ((gridWidth/(numOfValues + 1)) * (index * 1.1))
                                 + ((gridWidth/(numOfValues + 1))/2)).toString()}
-                            cy={(gridYOrigin - ((gridHeight/maxValue.value) * value)).toString()}
+                            cy={(gridYOrigin - ((gridHeight/maxValue) * value)).toString()}
                         />)}
                     </g>
                     <g className="labels x-labels">
@@ -57,7 +43,7 @@ const LineGraph = (props) => {
                     <g className="labels y-labels">
                         {(new Array(6)).fill(0).map((_, n) =>
                             <text x="80" y={(15 + (71 * n)).toString()}>
-                                {Math.round((maxValue.value - (maxValue.value/5) * n)*10)/10}
+                                {Math.round((maxValue - (maxValue/5) * n)*10)/10}
                             </text>)}
                     </g>
                 </svg>
