@@ -5,14 +5,14 @@
 -----------------------------*/
 .page-wrapper {
   font-family: 'Poppins', sans-serif;
-  background-color: #425e88;
+  background-color: #2d3644;
   min-height: 100vh;
   display: flex;
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   line-height: 1.5;
-  color: #161616;
+  color: #e6e6e6;
   text-align: center;
 }
 
@@ -31,6 +31,45 @@ div {
 /*-----------------------------
 * Form
 -----------------------------*/
+form h2 {
+  font-size: calc(10px + 2.5vmin);
+}
+
+form p {
+  font-size: calc(10px + 0.5vmin);
+}
+
+form .input-text {
+  float: left;
+  padding: 0 5% 0 10%;
+  left: 0;
+  width: 30%;
+}
+
+form .input-entry {
+  float: left;
+}
+
+form #input-submit {
+  float: inline-block;
+}
+
+form button {
+  padding: 10px 15px 10px 15px;
+  background-color: rgb(172, 112, 34);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover,
+form button:active {
+  transition: 0.3s;
+  background-color: rgb(247, 151, 27);
+  color:rgb(68, 68, 68);
+}
+
 .form-section {
   padding: 30px 60px;
   width: 50vh;
@@ -57,18 +96,45 @@ div {
   border-style: outset;
   background-color: rgb(58, 137, 173);
   color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  transition: 0.3s;
+  background-color: rgb(59, 170, 221);
+  color:rgb(68, 68, 68);
 }
 
 /*-----------------------------
 * SVG Graph
 -----------------------------*/
+.graph-wrapper {
+  width: 100vh;
+}
+
+.graph-container {
+  display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%; 
+	vertical-align: middle; 
+	overflow: hidden; 
+}
+
+.graph-container .graph-content {
+  display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 svg.graph {
-  color: white;
+  fill: #e6e6e6;
 }
 
 svg.graph .grid {
-stroke: white;
-stroke-width: 1;
+  stroke: white;
+  stroke-width: 1;
 }
 
 svg.graph .grid-lines {
@@ -97,12 +163,12 @@ svg.graph .grid-values .grid-values-circles:hover {
 
 svg.graph .grid-values .grid-values-bars {
   stroke: none;
-  fill: rgb(29, 201, 231);
+  fill: rgb(20, 150, 173);
 }
 
 svg.graph .grid-values .grid-values-bars:hover {
   stroke: none;
-  fill: rgb(20, 150, 173);
+  fill: rgb(29, 201, 231);
 }
 
 svg.graph .labels {
