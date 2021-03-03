@@ -38,9 +38,9 @@ const Generator = (props) => {
                     ></input>
                     <br />
                 </label>
-                <label className="form-component">
+                <span className="form-component">
                     <button id="input-submit" type="submit" value="Generate">Generate</button>
-                </label>
+                </span>
             </form>
         </div>
     )
