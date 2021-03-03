@@ -18,6 +18,9 @@ const LineGraph = (props) => {
         }
     }
 
+    console.log("Values are: " + props.values);
+    console.log("Max value is: " + maxValue.value);
+
     return (
         <>
             <Title title={props.title} />
@@ -34,22 +37,15 @@ const LineGraph = (props) => {
                     <line x1="90" x2="705" y1="370" y2="370"></line>
                 </g>
                 <g class="grid grid-values">
-                    {props.values.map((value, index) =>
-                    <circle
-                        cx={(100 + ((584/(numOfValues - 1)) * index)).toString()}
-                        cy={(373 - ((358/maxValue.value) * value)).toString()}
-                        r="2"
-                        stroke="white"
-                        // strokeWidth="2"
-                        fill="red"
-                    />)}
                     <polyline
-                        fill="none"
-                        stroke="white"
-                        strokeWidth="2"
                         points={props.values.map((value, index) =>
                             (100 + ((584/(numOfValues - 1)) * index)) + "," + (373 - ((358/maxValue.value) * value))).toString()}
                     />
+                    {props.values.map((value, index) =>
+                    <circle class="grid grid-values grid-values-circles"
+                        cx={(100 + ((584/(numOfValues - 1)) * index)).toString()}
+                        cy={(373 - ((358/maxValue.value) * value)).toString()}
+                    />)}
                 </g>
                 <g className="labels x-labels">
                     {props.values.map((value, index) =>
