@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   line-height: 1.5;
-  color: #e6e6e6;
+  color: #f7f7f7;
   text-align: center;
 }
 
@@ -56,7 +56,7 @@ form #input-submit {
 
 form button {
   padding: 10px 15px 10px 15px;
-  background-color: rgb(172, 112, 34);
+  background-color: rgb(173, 113, 58);
   border: none;
   border-radius: 10px;
   color: white;
@@ -67,7 +67,7 @@ form button:hover,
 form button:active {
   transition: 0.3s;
   background-color: rgb(247, 151, 27);
-  color:rgb(68, 68, 68);
+  color:rgb(20, 20, 20);
 }
 
 .form-section {
@@ -102,7 +102,7 @@ form button:active {
 .button:hover {
   transition: 0.3s;
   background-color: rgb(59, 170, 221);
-  color:rgb(68, 68, 68);
+  color:rgb(20, 20, 20);
 }
 
 /*-----------------------------
@@ -129,7 +129,7 @@ form button:active {
 }
 
 svg.graph {
-  fill: #e6e6e6;
+  fill: #f1f1f1;
 }
 
 svg.graph .grid {
