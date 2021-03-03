@@ -3,15 +3,17 @@ import React from 'react';
 const Generator = (props) => {
     const formData = props.value[0];
     const handleChange = props.onChange;
-    // const [handleTitleChange, handleValuesChange, handleTypeChange] = props.onChange;
     const handleSubmit = props.onSubmit;
 
     return(
         <div>
             <form onSubmit={handleSubmit} className="form-section" id="graph-form">
+                <h2>Welcome to Grapher!</h2>
+                <p>Enter a title for your graph, and the values to be plotted. Values should be in integer or decimal form with a comma seperating individual values. Then press 'Generate'. Use the blue buttons to toggle the type of graph.</p>
                 <label className="form-component">
-                    Title
+                    <span className="input-text">Title</span>
                     <input
+                        className="input-entry"
                         type="text"
                         minLength="1"
                         maxLength="50"
@@ -24,8 +26,9 @@ const Generator = (props) => {
                     <br />
                 </label>
                 <label className="form-component">
-                    Values
+                <span className="input-text">Values</span>
                     <input
+                        className="input-entry"
                         type="text"
                         minLength="1"
                         name="values"
@@ -36,8 +39,9 @@ const Generator = (props) => {
                     <br />
                 </label>
                 <label className="form-component" form="graph-form" required>
-                    Type of Graph
+                    <span className="input-text">Type of Graph</span>
                     <select
+                        className="input-entry"
                         name="type"
                         onChange={handleChange}
                         required
@@ -52,7 +56,7 @@ const Generator = (props) => {
                         >Line Graph</option>
                     </select>
                 </label>
-                <input type="submit" value="Generate" />
+                <button id="input-submit" type="submit" value="Generate">Generate</button>
             </form>
         </div>
     )
