@@ -50,23 +50,24 @@ form .input-entry {
   float: left;
 }
 
-form #input-submit {
+form button {
+  padding: 10px 0;
   float: inline-block;
 }
 
-form button {
+form #input-submit {
   padding: 10px 15px 10px 15px;
-  background-color: rgb(173, 113, 58);
+  background-color:rgb(146, 102, 7);
   border: none;
   border-radius: 10px;
   color: white;
   cursor: pointer;
 }
 
-form button:hover,
-form button:active {
+form #input-submit:hover,
+form #input-submit:active {
   transition: 0.3s;
-  background-color: rgb(247, 151, 27);
+  background-color: rgb(182, 135, 33);
   color:rgb(20, 20, 20);
 }
 
@@ -83,14 +84,6 @@ form button:active {
   display: block;
 }
 
-#bar-button {
-  border-radius: 8px 0 0 8px;
-}
-
-#line-button {
-  border-radius: 0 8px 8px 0;
-}
-
 .button {
   padding: 12px;
   border-style: outset;
@@ -99,7 +92,17 @@ form button:active {
   cursor: pointer;
 }
 
-.button:hover {
+#bar-button {
+  border-radius: 15px 0 0 15px;
+}
+
+#line-button {
+  border-radius: 0 15px 15px 0;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
   transition: 0.3s;
   background-color: rgb(59, 170, 221);
   color:rgb(20, 20, 20);

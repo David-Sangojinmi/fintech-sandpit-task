@@ -16,7 +16,7 @@ const Grapher = () => {
 
     const [graphsVisible, setGraphsVisible] = useState({
         name: "Graphs",
-        showHideBarGraph: false,
+        showHideBarGraph: true,
         showHideLineGraph: false
     })
 
