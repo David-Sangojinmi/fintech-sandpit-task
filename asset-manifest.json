@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/fintech-sandpit-task/static/css/main.4f7399ed.chunk.css",
-    "main.js": "/fintech-sandpit-task/static/js/main.81962c58.chunk.js",
-    "main.js.map": "/fintech-sandpit-task/static/js/main.81962c58.chunk.js.map",
-    "runtime-main.js": "/fintech-sandpit-task/static/js/runtime-main.cea77026.js",
-    "runtime-main.js.map": "/fintech-sandpit-task/static/js/runtime-main.cea77026.js.map",
-    "static/js/2.426c95c5.chunk.js": "/fintech-sandpit-task/static/js/2.426c95c5.chunk.js",
-    "static/js/2.426c95c5.chunk.js.map": "/fintech-sandpit-task/static/js/2.426c95c5.chunk.js.map",
-    "static/js/3.f4b5122c.chunk.js": "/fintech-sandpit-task/static/js/3.f4b5122c.chunk.js",
-    "static/js/3.f4b5122c.chunk.js.map": "/fintech-sandpit-task/static/js/3.f4b5122c.chunk.js.map",
+    "main.css": "/fintech-sandpit-task/static/css/main.54d0dc27.chunk.css",
+    "main.js": "/fintech-sandpit-task/static/js/main.0f7cd0a0.chunk.js",
+    "main.js.map": "/fintech-sandpit-task/static/js/main.0f7cd0a0.chunk.js.map",
+    "runtime-main.js": "/fintech-sandpit-task/static/js/runtime-main.c33bb2c3.js",
+    "runtime-main.js.map": "/fintech-sandpit-task/static/js/runtime-main.c33bb2c3.js.map",
+    "static/js/2.53ceaab9.chunk.js": "/fintech-sandpit-task/static/js/2.53ceaab9.chunk.js",
+    "static/js/2.53ceaab9.chunk.js.map": "/fintech-sandpit-task/static/js/2.53ceaab9.chunk.js.map",
+    "static/js/3.e7c40a58.chunk.js": "/fintech-sandpit-task/static/js/3.e7c40a58.chunk.js",
+    "static/js/3.e7c40a58.chunk.js.map": "/fintech-sandpit-task/static/js/3.e7c40a58.chunk.js.map",
     "index.html": "/fintech-sandpit-task/index.html",
-    "static/css/main.4f7399ed.chunk.css.map": "/fintech-sandpit-task/static/css/main.4f7399ed.chunk.css.map",
-    "static/js/2.426c95c5.chunk.js.LICENSE.txt": "/fintech-sandpit-task/static/js/2.426c95c5.chunk.js.LICENSE.txt"
+    "static/css/main.54d0dc27.chunk.css.map": "/fintech-sandpit-task/static/css/main.54d0dc27.chunk.css.map",
+    "static/js/2.53ceaab9.chunk.js.LICENSE.txt": "/fintech-sandpit-task/static/js/2.53ceaab9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.cea77026.js",
-    "static/js/2.426c95c5.chunk.js",
-    "static/css/main.4f7399ed.chunk.css",
-    "static/js/main.81962c58.chunk.js"
+    "static/js/runtime-main.c33bb2c3.js",
+    "static/js/2.53ceaab9.chunk.js",
+    "static/css/main.54d0dc27.chunk.css",
+    "static/js/main.0f7cd0a0.chunk.js"
   ]
 }
