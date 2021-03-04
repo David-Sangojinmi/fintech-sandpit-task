@@ -38,24 +38,6 @@ const Grapher = () => {
             title: formData.title,
             values: valuesArray,
         })
-
-        // if (formData.type === 0 || graphData.type === 0) {
-        //     if (graphsVisible.showHideBarGraph === false) {
-        //         setGraphsVisible({
-        //             ...graphsVisible,
-        //             showHideBarGraph: true,
-        //             showHideLineGraph: false
-        //         });
-        //     }
-        // } else {
-        //     if (graphsVisible.showHideLineGraph === false) {
-        //         setGraphsVisible({
-        //             ...graphsVisible,
-        //             showHideBarGraph: false,
-        //             showHideLineGraph: true
-        //         });
-        //     }
-        // }
     }
 
     const hideComponent = (e) => {
@@ -100,7 +82,6 @@ const Grapher = () => {
                 {graphsVisible.showHideBarGraph && <BarGraph title={graphData.title} values={graphData.values}/>}
                 {graphsVisible.showHideLineGraph && <LineGraph title={graphData.title} values={graphData.values}/>}
             </div>
-            
         </div>
     );
 }
