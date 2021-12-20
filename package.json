@@ -2,7 +2,7 @@
   "name": "fintech-sandpit-task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://davidsangojinmi.ml/fintech-sandpit-task/",
+  "homepage": "http://iamdavid.dev/fintech-sandpit-task/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
